@@ -3,6 +3,7 @@
 ## <a name="table-of-contents"></a>Table of Contents
   - [Hello World](#hello-world)
   - [var vs val](#var-vs-val)
+  - [Data Types](#data-types)
 
 ### <a name="hello-world"></a>Hello World <sup>[Back ⇈](#table-of-contents)</sup>
 
@@ -22,4 +23,26 @@ name = "Abhishek"
 
 val anotherName: String = "Sam" // immutable
 anotherName = "Abhishek" // compilation error
+```
+### <a name="data-types"></a> Data Types <sup>[Back ⇈](#table-of-contents)</sup>
+  1. String
+  2. Boolean
+  3. Byte
+  4. Short
+  5. Int
+  6. Long
+  7. Float
+  8. Double
+
+```kotlin
+val name: String = "Hello world!"
+    
+val isVerified: Boolean  = true // or false
+
+val byte: Byte = 20
+val one: Int = 1
+val number: Long = 123456789
+
+val floatNumber: Float = 123.52f
+val pi: Double = 3.14
 ```
