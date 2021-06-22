@@ -11,7 +11,7 @@ fun main() {
   println("Hello World!")
 ```
 
-### <a name="var-vs-val"> var vs val <sup>[Back ⇈](#table-of-contents)</sup>
+### <a name="var-vs-val"></a> var vs val <sup>[Back ⇈](#table-of-contents)</sup>
 `var` is used to declare a mutable variable i.e value **can** be changed.
 
 `val` is used to declare an immutable variable i.e value **can't** be changed.
