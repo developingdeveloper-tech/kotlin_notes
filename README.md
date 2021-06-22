@@ -1,13 +1,17 @@
-# kotlin-cheatsheet
+# Kotlin Cheatsheet
 
-### 1. Hello World
+## <a name="table-of-contents"></a>Table of Contents
+  - [Hello World](#hello-world)
+  - [var vs val](#var-vs-val)
+
+### <a name="hello-world"></a>Hello World <sup>[Back ⇈](#table-of-contents)</sup>
 
 ```kotlin
 fun main() {
   println("Hello World!")
 ```
 
-### 2. var vs val
+### <a name="var-vs-val"> var vs val <sup>[Back ⇈](#table-of-contents)</sup>
 `var` is used to declare a mutable variable i.e value **can** be changed.
 
 `val` is used to declare an immutable variable i.e value **can't** be changed.
