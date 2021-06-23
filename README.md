@@ -4,6 +4,7 @@
   - [Hello World](#hello-world)
   - [var vs val](#var-vs-val)
   - [Data Types](#data-types)
+  - [Null Safety](#null-safety)
 
 ### <a name="hello-world"></a>Hello World <sup>[Back ⇈](#table-of-contents)</sup>
 
@@ -45,4 +46,26 @@ val number: Long = 123456789
 
 val floatNumber: Float = 123.52f
 val pi: Double = 3.14
+```
+
+### <a name="null-safety"></a> Null Safety <sup>[Back ⇈](#table-of-contents)</sup>
+Kotlin has a strong type system which means, variables can either hold null or they can't.
+
+```kotlin
+ var name: String = "John Doe"
+name = null // invalid (error)
+
+var nullableName: String? = "John Doe"
+nullableName = null // valid
+
+var age: Int = null // invalid (error)
+
+var nullableAge: Int? = 10
+nullableAge = null // valid
+
+val students = mutableListOf<String>()
+students.add(null) // invalid (error)
+
+val nullableStudents = mutableListOf<String?>()
+nullableStudents.add(null) // valid
 ```
