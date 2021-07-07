@@ -5,6 +5,7 @@
   - [var vs val](#var-vs-val)
   - [Data Types](#data-types)
   - [Null Safety](#null-safety)
+  - [Different types of function declarations](#different-types-of-function-declarations)
 
 ### <a name="hello-world"></a>Hello World <sup>[Back ⇈](#table-of-contents)</sup>
 
@@ -68,4 +69,28 @@ students.add(null) // invalid (error)
 
 val nullableStudents = mutableListOf<String?>()
 nullableStudents.add(null) // valid
+```
+
+### <a name="different-types-of-function-declarations"></a> Different types of function declarations <sup>[Back ⇈](#table-of-contents)</sup>
+There are multiple ways to declare functions in kotlin.
+
+```kotlin
+fun main() {
+    val num1 = 10
+    val num2 = 20
+    
+    val sum        = add(num1, num2) // 30
+    val difference = subtract(num1, num2) // -10
+    val product    = multiply(num1, num2) // 200
+    val quotient   = num2.divide(num1) // 2
+    val remainder  = num2 % num1 // 0
+}
+
+fun add(num1: Int, num2: Int): Int { return num1 + num2 } // regular function
+
+fun subtract(num1: Int, num2: Int): Int = num1 - num2 // like an expression
+ 
+fun multiply(num1: Int, num2: Int) = num1 * num2 // return type is inferred
+
+fun Int.divide(num2: Int) = this / num2 // extension function
 ```
