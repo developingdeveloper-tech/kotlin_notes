@@ -6,6 +6,7 @@
   - [Data Types](#data-types)
   - [Null Safety](#null-safety)
   - [Different types of function declarations](#different-types-of-function-declarations)
+  - [Elvis Operator](#elvis-operator)
 
 ### <a name="hello-world"></a>Hello World <sup>[Back ⇈](#table-of-contents)</sup>
 
@@ -93,4 +94,17 @@ fun subtract(num1: Int, num2: Int): Int = num1 - num2 // like an expression
 fun multiply(num1: Int, num2: Int) = num1 * num2 // return type is inferred
 
 fun Int.divide(num2: Int) = this / num2 // extension function
+```
+
+### <a name="elvis-operator"></a> Elvis Operator <sup>[Back ⇈](#table-of-contents)</sup>
+'?:' is called an elvis operator and the value on the right of it is used when the value on the left of it is null.
+
+```kotin
+val name: String? = null
+
+var capitalizedName = name?.capitalize()
+println("name: $capitalizedName") // null
+
+capitalizedName = name?.capitalize() ?: "John Doe"
+println("name: $capitalizedName") // John Doe
 ```
