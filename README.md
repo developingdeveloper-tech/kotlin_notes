@@ -7,6 +7,7 @@
   - [Null Safety](#null-safety)
   - [Different types of function declarations](#different-types-of-function-declarations)
   - [Elvis Operator](#elvis-operator)
+  - [Wen - An alternative to else-if ladder](#when-an-alternative-to-if-else-ladder)
 
 ### <a name="hello-world"></a>Hello World <sup>[Back ⇈](#table-of-contents)</sup>
 
@@ -99,7 +100,7 @@ fun Int.divide(num2: Int) = this / num2 // extension function
 ### <a name="elvis-operator"></a> Elvis Operator <sup>[Back ⇈](#table-of-contents)</sup>
 '?:' is called an elvis operator and the value on the right of it is used when the value on the left of it is null.
 
-```kotin
+```kotlin
 val name: String? = null
 
 var capitalizedName = name?.capitalize()
@@ -107,4 +108,25 @@ println("name: $capitalizedName") // null
 
 capitalizedName = name?.capitalize() ?: "John Doe"
 println("name: $capitalizedName") // John Doe
+```
+
+### <a name="when-an-alternative-to-if-else-ladder"></a> When - An alternative to else-if ladder<sup>[Back ⇈](#table-of-contents)</sup>
+Tracking and understanding all the branches of else-if ladder can be a tricky job whcih can be simplified 
+
+```kotlin
+fun main() {
+    val user = User("ABC", "def")
+    validateUser(user)
+}
+
+fun validateUser(user: User) {
+    when {
+        user.name == null -> logError("")
+        user.password == null -> logError("")
+        else -> {
+            validateUsername(user.name)
+            validatePassword(user.password)
+        }
+    }
+}
 ```
