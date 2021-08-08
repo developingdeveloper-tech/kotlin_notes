@@ -7,7 +7,7 @@
   - [Null Safety](#null-safety)
   - [Different types of function declarations](#different-types-of-function-declarations)
   - [Elvis Operator](#elvis-operator)
-  - [Wen - An alternative to else-if ladder](#when-an-alternative-to-if-else-ladder)
+  - [When - An alternative to else-if ladder](#when-an-alternative-to-if-else-ladder)
 
 ### <a name="hello-world"></a>Hello World <sup>[Back ⇈](#table-of-contents)</sup>
 
