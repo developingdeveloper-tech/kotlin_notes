@@ -1,4 +1,4 @@
-# Kotlin Cheatsheet
+# Kotlin Notes
 
 ## <a name="table-of-contents"></a>Table of Contents
   - [Hello World](#hello-world)
